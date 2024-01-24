@@ -4,42 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>The Code Magazine [DEMO]</h1>
-    <a href="#">Blog Challenges Flexbox Css Grid</a>
-    <h2>The Basic Language of the Web:HTML</h2>
-    <img src="./img/img1.jpg"  width=90px =alt="Sophie lung selfie">
-    <p>Posted by <strong>Laura Jones</strong> on Monday , June 21st 2027
-    </p>
-    <img src="./img/code.jpg"  width=400px alt="some code">
-    <p>All modern websitea and web application are built using 3 fundamental technologies: HTML, CSS adn JavaScript.</p>
-    <p>These are the languages of the web</p>
+    <div class="contrainer">
+        <header>
+            <h1>The Code Magazine</h1>
+            <nav>
+               <!-- <strong>This is the navigation</strong> -->
+               <a href="#">Blogs</a>
+               <a href="#">Challenges</a>
+               <a href="#">Flexbox</a>
+               <a href="#">Css Grid</a>
+            </nav>
+            <button class="absolute">♥︎Like</button>    
 
-    <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it</p>
-    <h3>What is HTML?</h3>
-    <p>HTML stands for <strong>HyperText Markup Language</strong> It's a markup language that web developers use to structure and describe the content of a webpage(not a programming language)</p>
-    <p>HTML consists of elements that describe different types of content: paragraph, links, headings, images, video, etc. Web browsers understand HTML and render HTML code as websites<p>
-    <p>In HTML, each element is made up of 3 parts:
-        <ol>
-            <li>The Opening tag</li>
-            <li>The Closing tag</li>
-            <li>The actual element</li>
-        </ol>
-    </p>
-    <h2>Coverse Chuck Taylor All Star Low Top</h2>
-    <img src="./img/converst.jpg" width=400px alt="shoes">
-    <strong>$65.00</strong>
-    <p>Free Shipping</p>
-    <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe statple</p>
-    <a href="#">More information &rarr;</a>
-    <h2>Product Details</h2>
-    <ul>
-        <li>Lightweight, durable canvas sneeker</li>
-        <li>Lightly paded footbed for added comfort</li>
-        <li>Iconic Chuck Taylor ankle patch</li>
-    </ul>
-    <button>Add to cart</button>
+        </header>
+        <article>
+            <h2>The Basic Language of the Web:HTML</h2>
+            <img src="./img/img1.jpg"  width=90px alt="Sophie lung selfie">
+            <p>Posted by <em><strong>Laura Jones</strong></em> on Monday , June 21st 2027
+            </p>
+            <img src="./img/code.jpg"  width=100% alt="some code">
+            <p>All modern websites and web applications are built using 3 fundamental technologies: HTML, CSS adn JavaScript.</p>
+            <p>These are the languages of the web</p>
+    
+            <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it</p>
+            <h3>What is HTML?</h3>
+            <p>HTML stands for <strong>HyperText Markup Language</strong> It's a markup language that web developers use to structure and describe the content of a webpage(not a programming language)</p>
+            <p>HTML consists of elements that describe different types of content: paragraph, links, headings, images, video, etc. Web browsers understand HTML and render HTML code as websites<p>
+            <p>In HTML, each element is made up of 3 parts:
+                <ol>
+                    <li>The Opening tag</li>
+                    <li>The Closing tag</li>
+                    <li>The actual element</li>
+                </ol>
+            </p>
+            <h3>Why you should learn HTML</h3>
+            <p>There are countless reasons for learning the fundamental language of the web</p>
+            <p>Here are 5 of them:</p>
+            <ul>
+                <li>To be able to use the fundamental web dev language</li>
+                <li>To hand-craft beautifull websites instead of relying on tools like Wordpress of wix</li>
+                <li>To build web applications</li>
+                <li>To impress friends</li>
+                <li>To have fun</li>
+            </ul>
+            <aside>
+                <h4>Related Posts</h4>
+                <ul class="related">
+                    <li>
+                        <img src="./img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="developer coding" width=400px">
+                        <a href="#">How to learn Web Development</a>
+                        <p class="related-author">By Jonas Schemdtmann</p>
+                    </li>
+                    <li>
+                        <img src="./img/brandon-morgan-3qucB7U2l7I-unsplash.jpg" alt="lightning" width=400px">
+                        <a href="#">The power of CSS</a>
+                        <p class="related-author">By Jonas Schemdtmann</p>
+                    </li>
+                    <li>
+                        <img src="./img/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="js code" width="400px">
+                        <a href="#">Why JavaScript is Awesome</a>
+                        <p class="related-author">By Matilda</p>
+                    </li>      
+                </ul>
+            </aside>
+            
+        </article> 
+        <section>
+            <h2 class="sub-h2">Coverse Chuck Taylor All Star Low Top</h2>
+            <img src="./img/converst.jpg" width=400px alt="shoes">
+            <div id="pricing">
+                <p><strong>$65.00</strong></p>
+                <p>Free Shipping</p>
+            </div>
+            <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe statple</p>
+            <a id='link' href="#">More information &rarr;</a>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color color-blue"></div>
+                <div class="color color-red"></div>
+                <div class="color color-yellow"></div>
+                <div class="color color-green"></div>
+                <div class="color color-brown"></div>
+                <div class="color color-orange"></div>
+            </div>
+            <h3>Product Details</h3>
+            <ul>
+                <li>Lightweight, durable canvas sneeker</li>
+                <li>Lightly paded footbed for added comfort</li>
+                <li>Iconic Chuck Taylor ankle patch</li>
+            </ul>
+            <button>Add to cart</button>
+        </section>
+        <footer>
+            <p id="copyright" class="copyright text">
+                Copyright &copy; 2027 by The Code Magazine.
+            </p>
+            </footer>
+    </div>
+
 
 </body>
 </html>
