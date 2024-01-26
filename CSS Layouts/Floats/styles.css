@@ -1,0 +1,316 @@
+ * {
+    color:#444;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+body {
+    color: #444;
+    font-family: serif;
+    position: relative;
+
+}
+
+.contrainer{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+}
+
+nav {
+    text-align: center;
+    font-size:  20px;
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: #1098ad
+}
+
+h1{
+    color: #1098ad;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+} 
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav {
+    font-size: 18px;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
+article img {
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol,{
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+li:last-child{
+    margin-bottom: 0;
+}
+
+
+footer p {
+    font-size: 16px;
+    font-style: italic
+}
+
+.related-author {
+    font-size:  18px;
+    font-weight: bold;
+}
+
+.related {
+    list-style: none;
+}
+
+
+
+aside {
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/* Styling Links */
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color:plum;
+}
+
+a:hover {
+    color:orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+
+}
+/* Resolviing css conflicts */
+
+#copyright {
+    color: red;
+}
+
+.copyright {
+    color: blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color:green !important;
+}
+
+section {
+    border: 5px solid black;
+    color: black;
+}
+
+section h2{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgba(249, 241, 241, 0.506);
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+section h3{
+    color: black;
+}
+
+section p {
+    color: black;
+}
+
+section a {
+    color: black;
+}
+
+section button{
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+section button:hover {
+    background-color: white;
+    color: black;
+}
+
+#link, #link:visited {
+    color: black;
+}
+
+#link:hover, #link:active {
+    text-decoration: none;
+}
+
+#pricing  p{
+    color: black;
+    font-weight: bold;
+}
+
+#pricing p{
+
+}
+
+.absolute {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    right : 50px;
+}
+
+
+/* Pseudo elements */
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+    color: red;  
+}
+
+h2 {
+    position: relative;
+}
+
+h2::before {
+    content:"Top";
+    background-color: #fdfd63;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    color: #444;    
+}
+
+section {
+    position: relative;
+}
+
+section::after{
+    content: "sale";
+    background-color: #e71010;
+    font-size: 24px;
+    padding: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 2px 4px 8px rgb(52, 18, 18);
+    display: inline-block;
+    position: absolute;
+    top: -25px;
+    left: -60px;
+    letter-spacing: 0.1in;
+
+}
+
+
+
+.color {
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.color-blue {
+    background-color: #0606f8;
+}
+
+.color-red {
+    background-color: #ff0000;
+}
+
+.color-green {
+    background-color: #008000;
+}
+
+.color-yellow {
+    background-color: #ffff00;
+}
+
+.color-brown {
+    background-color: #a52a2a;
+}
+
+.color-orange {
+    background-color: #ffa500;
+}

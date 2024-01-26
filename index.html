@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="contrainer">
-        <header>
+        <header class="clearfix">
             <h1>The Code Magazine</h1>
             <nav>
                <!-- <strong>This is the navigation</strong> -->
@@ -17,13 +17,17 @@
                <a href="#">Flexbox</a>
                <a href="#">Css Grid</a>
             </nav>
-            <button class="absolute">♥︎Like</button>    
+            <div class="clear">
+
+            </div>
+            <button class="absolute">♥︎Like</button>  
+
 
         </header>
         <article>
             <h2>The Basic Language of the Web:HTML</h2>
-            <img src="./img/img1.jpg"  width=90px alt="Sophie lung selfie">
-            <p>Posted by <em><strong>Laura Jones</strong></em> on Monday , June 21st 2027
+            <img src="./img/img1.jpg"  width=90px alt="Sophie lung selfie" class="author-img">
+            <p class="author" id="author">Posted by <em><strong>Laura Jones</strong></em> on Monday , June 21st 2027
             </p>
             <img src="./img/code.jpg"  width=100% alt="some code">
             <p>All modern websites and web applications are built using 3 fundamental technologies: HTML, CSS adn JavaScript.</p>
@@ -50,37 +54,51 @@
                 <li>To impress friends</li>
                 <li>To have fun</li>
             </ul>
-            <aside>
-                <h4>Related Posts</h4>
-                <ul class="related">
-                    <li>
-                        <img src="./img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="developer coding" width=400px">
-                        <a href="#">How to learn Web Development</a>
-                        <p class="related-author">By Jonas Schemdtmann</p>
-                    </li>
-                    <li>
-                        <img src="./img/brandon-morgan-3qucB7U2l7I-unsplash.jpg" alt="lightning" width=400px">
-                        <a href="#">The power of CSS</a>
-                        <p class="related-author">By Jonas Schemdtmann</p>
-                    </li>
-                    <li>
-                        <img src="./img/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="js code" width="400px">
-                        <a href="#">Why JavaScript is Awesome</a>
-                        <p class="related-author">By Matilda</p>
-                    </li>      
-                </ul>
-            </aside>
-            
         </article> 
-        <section>
-            <h2 class="sub-h2">Coverse Chuck Taylor All Star Low Top</h2>
-            <img src="./img/converst.jpg" width=400px alt="shoes">
+
+        <aside>
+            <h4>Related Posts</h4>
+            <ul class="related">
+                <li>
+                    <img src="./img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="developer coding">
+                    <a href="#">How to learn Web Development</a>
+                    <p class="related-author">By Jonas Schemdtmann</p>
+                </li>
+                <li>
+                    <img src="./img/brandon-morgan-3qucB7U2l7I-unsplash.jpg" alt="lightning">
+                    <a href="#">The power of CSS</a>
+                    <p class="related-author">By Jonas Schemdtmann</p>
+                </li>
+                <li>
+                    <img src="./img/gabriel-heinzer-g5jpH62pwes-unsplash.jpg" alt="js code">
+                    <a href="#">Why JavaScript is Awesome</a>
+                    <p class="related-author">By Matilda</p>
+                </li>      
+            </ul>
+        </aside>
+        <div class="clrea"></div>
+            
+        
+        <footer>
+            <p id="copyright" class="copyright text">
+                Copyright &copy; 2027 by The Code Magazine.
+            </p>
+        </footer>
+    </div>
+    <section id="prac">
+        <h2 class="sub-h2">Coverse Chuck Taylor All Star Low Top</h2>
+        <div class="left">
+            <img src="./img/converst.jpg" width= alt="shoes">
+        </div>
+        <div class="center">
             <div id="pricing">
-                <p><strong>$65.00</strong></p>
-                <p>Free Shipping</p>
+                <p class="strong">$65.00</p>
+                <p class="price-text">Free Shipping</p>
             </div>
-            <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe statple</p>
-            <a id='link' href="#">More information &rarr;</a>
+            <div class="price-content">
+                <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe statple</p>
+                <a id='link' href="#">More information &rarr;</a>
+            </div>
             <div class="colors">
                 <div class="color"></div>
                 <div class="color color-blue"></div>
@@ -89,21 +107,19 @@
                 <div class="color color-green"></div>
                 <div class="color color-brown"></div>
                 <div class="color color-orange"></div>
-            </div>
+            </div>    
+        </div>
+        <div class="right">
             <h3>Product Details</h3>
             <ul>
                 <li>Lightweight, durable canvas sneeker</li>
                 <li>Lightly paded footbed for added comfort</li>
                 <li>Iconic Chuck Taylor ankle patch</li>
             </ul>
-            <button>Add to cart</button>
-        </section>
-        <footer>
-            <p id="copyright" class="copyright text">
-                Copyright &copy; 2027 by The Code Magazine.
-            </p>
-            </footer>
-    </div>
+        </div>
+        
+        <button>Add to cart</button>
+    </section>
 
 
 </body>
