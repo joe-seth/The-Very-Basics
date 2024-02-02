@@ -16,12 +16,113 @@
             font-family: serif;
             background-color: aliceblue;
         }
-
         
+        .pagination {
+            display: flex;
+            width: 70%;
+            background-color: #fff;
+            margin: 200px auto;
+            height: 100px;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+
+        }
+        .btn-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #083708;
+            border-radius: ;
+        
+        }
+
+        .page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-color: #fff;  
+        }
+
+        .icon {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .icon:hover{
+            cursor: pointer;
+            background-color: #707870;
+            border: 1px solid;;
+        }
+
+       a {
+        text-decoration: none;
+       }
+       
+       .page a:hover{
+        color:#fff;
+       }
+
+       .page a:hover,
+       .page:hover {
+        background-color: #707870;
+        color:#fff;
+        cursor: pointer;
+       }
+
+        .icon-left {
+            left: 0;
+            transform: translate(-50%); 
+        }
+
+        .icon-right {
+            right: 0;
+            transform: translate(50%);
+        }
+
 
     </style>
 </head>
 <body>
-    
+    <div class="pagination">
+        <div class="icon icon-left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+              
+        </div>
+        <div class="icon icon-right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+              
+        </div>
+        <div class="page page-1">
+            <a href="#">1</a></div>
+        <div class="page page-2">
+            <a href="#">2</a></div>
+        <div class="page page-3">
+            <a href="#">3</a></div>
+        <div class="page page-4">
+            <a href="#">4</a></div>
+        <div class="page page-5">
+            <a href="#">5</a></div>
+        <div class="page page-6">
+            <a href="#">6</a></div>
+        <div class="page page-7">
+            <a href="#">7</a></div>
+        <div class="page page-8">
+            <a href="#">8</a></div>
+        <div class="page page-9">
+            <a href="#">9</a></div>
+    </div>
 </body>
 </html>
